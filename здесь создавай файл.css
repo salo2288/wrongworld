@@ -1,0 +1,184 @@
+header {
+background-color: gold;
+text-align: center;
+padding: 30px 0;
+line-height: 40px;
+}
+* {
+font-family: 'Oswald', sans-serif; 
+font-family: 'Rubik Puddles', cursive;
+margin: 0;
+padding: 0;
+color: rgb(0, 0, 0);
+text-shadow: 0px 0px 1px rgba(255, 0, 0, 0);
+}
+.ps {
+background-color: red;
+width: max-content;
+margin: auto;
+}
+.uu {
+display: flex;
+justify-content: center;
+}
+.hjaskghdkgdjagzfjhksdgjkasjkdghvjsdhgfsdjhgfaskgfasdjhgfhzbvcbbzvfnbavnehwfquytdjashgdjqwhyetasjudhgajhdgsfasdfasfasdf{
+text-align: center;
+line-height: 40px;
+}
+.class {
+display: flex;
+justify-content: center;
+text-align: center;
+line-height: 40px;
+gap: 120px;
+margin-top: 100px;
+}
+.OOOwepelmectoro {
+background-color: maroon ;
+padding:20px ;
+border-radius:233333333333333222222222222222222233333333333333322222222222222222px ;
+margin-top: 20px;
+}
+.classno{
+margin-right: 40px;
+}
+.clissno{
+text-align: center;
+max-width: 100%;
+margin-top: 100px;
+background-color: darkgreen;
+padding: 25px;
+}
+.tupo {
+display: flex;
+justify-content:space-between;
+background-color: rgb(63, 20, 20);
+margin-top: 100px;
+box-shadow: 3px -3px 30px 4px cornflowerblue;
+}
+.gg {
+line-height: 25px;
+}
+.crossovok {
+margin-left: 70px;
+}
+.classny {
+font-size: 35px;
+margin: 20px 0px;
+}
+.closs {
+background-color: yellowgreen;
+padding: 20px;
+}
+.cross {
+margin: 20px 0px ;
+}
+.korkatwo {
+margin-left: 850px ;
+}
+.korka {
+font-size: x-large;
+margin-bottom: 30px;
+}
+.nokorka {
+display: flex;
+justify-content: center;
+}
+.len {
+padding: 20px;
+margin-bottom: 30px;
+background-color: wheat;
+
+margin-top: 5px;
+width: 250px;
+border: white;
+box-shadow: 10px 10px 5px crimson;
+}
+.br {
+background-color: mediumseagreen;
+color: whitesmoke;
+padding: 1%;
+margin-left: 50px;
+}
+.halva {
+position: fixed;
+top: 5%;
+
+}
+.anima {
+animation-name: round;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-delay: 1ms;
+}
+
+@keyframes round {
+0% {
+margin-left: 0%;
+color: blueviolet;
+}
+
+25% {
+margin-left: -200px;
+}
+
+
+50% {
+margin-left:0%;
+color: greenyellow;
+}
+
+75% {
+margin-left: 200px;
+}
+
+100% {
+margin-left: 0px ;
+color: navy;
+}
+}
+.interior {
+background-color: chartreuse;
+padding: 15px;
+}
+.olux {
+width: 75%;
+margin: auto;
+border: 5px solid black;
+position: relative;
+animation-name: round2;
+animation-duration: 1s;
+}
+.lena {
+font-size: x-large;
+}
+.lena:hover {
+cursor: pointer; color: crimson;
+}
+.onyx {
+background-color: rgba(0, 0, 0, 0.495);
+position: fixed;
+width: 100%;
+height: 100% ;
+z-index: 1;
+display: none;
+}
+.oryx {
+    background-color: whitesmoke;
+    padding: 15px;
+}
+.omyx {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: chartreuse;
+    padding: 15px;
+}
+@keyframes round2 {
+    0% {
+        top: -250px;
+    }
+    100% {
+        top: 0px;
+    } }
