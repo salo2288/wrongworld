@@ -10,16 +10,14 @@
     <title>здесь НЕ создавай файл</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='здесь создавай файл.css'>
-    <script src='main.js'></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Rubik+Puddles&display=swap" rel="stylesheet">
-    <script src="пельмеши.js"></script>
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
   <div class="onyx" id="onyx">
-  <div class="olux">
+  <div class="olyx">
     <div class="omyx">
       <p>
         informaiton about pelmeni and bulba
@@ -180,35 +178,50 @@
       ИМЯ
     </label>
     <br>
-    <input type="text" placeholder="ИМУ" class="len">
+    <input type="text" placeholder="ИМУ" class="len" id="name" min="2" required>
     <br>
     <label>
       ФАМИЛИЯ
     </label>
     <br>
-    <input type="text" placeholder="фумилия" class="len">
+    <input type="text" placeholder="фумилия" class="len" id="surname" min="2" required>
     <br>
     <label>
       ПОЧТА
     </label>
-    <br>
-    <input type="text" placeholder="УГАГАГАГА" class="len">
+    <br> 
+    <input type="text" placeholder="УГАГАГАГА" class="len" id="male" required>
     <br>
     <label>
       ТЕЛЕФОН
     </label>
     <br>
-    <input type="text" placeholder="ПЕЛЬМЕШКИ" class="len">
+    <input type="tel" placeholder="ПЕЛЬМЕШКИ" class="len" id="telephone" required minlength="12" maxlength="12">
     <br>
     <font color="green">оплата онлайн</font>
     <br>
     <br>
     <br>
-    <button class="br animate__animated animate__hinge wow">
+    <button class="br animate__animated animate__hinge wow" onclick="valid_pelmen()" type="button">
       перейти к ПЕЛЬМЕНЯМ
     </button>
+    <br>
+    <span id="namee"></span>
   </form>
 </section>
+<section>
+  <div class="obyx">
+    <img src="другую папку/star0.png" width="150px" height="150px" id="star1" onmouseover="star_vs_unshaded_stars(0)">
+    <img src="другую папку/star0.png" width="150px" height="150px" id="star2" onmouseover="star_vs_unshaded_stars(1)">
+    <img src="другую папку/star0.png" width="150px" height="150px" id="star3" onmouseover="star_vs_unshaded_stars(2)">
+    <img src="другую папку/star0.png" width="150px" height="150px" id="star4" onmouseover="star_vs_unshaded_stars(3)">
+    <img src="другую папку/star0.png" width="150px" height="150px" id="star5" onmouseover="star_vs_unshaded_stars(4)">
+  </div> 
+  <div class="sovyx">
+    оставтьте пельмень сайтаме
+  </div>
+</section>
 </main>
+<script src="пельмеши.js"></script>
 </body>
 </html>

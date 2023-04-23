@@ -33,13 +33,44 @@ y.style.backgroundColor="green"
 }
 else {
 y.style.backgroundColor="rgb(255, 255, 255)"
+}}
+const onyx=document.querySelector(".onyx")
+const ps=document.querySelector(".ps")
+const lena=document.querySelector(".lena")
+const olyx=document.querySelector(".olyx")
+ps.addEventListener("click", function(){
+onyx.classList.add("onyx_1")
+olyx.classList.add("olyx_1")
+})
+lena.addEventListener("click", function(){
+onyx.classList.remove("onyx_1")
+olyx.classList.remove("olyx_1")
+})
+function star_vs_unshaded_stars(y)
+{
+let x= ["star1","star2","star3","star4","star5"]
+for (let i=0;i<=y;i++) {
+   let b=x[i]
+   let y=document.getElementById(b)
+   y.src="другую папку/star1.png"
 }
 }
-function change_style2() {
-let y = document.getElementById("onyx")
-if (y.style.display=="none")
-y.style.display="block";
-else {
-y.style.display="none"
+function valid_pelmen() {
+    let name = document.getElementById("name")
+    let surname = document.getElementById("surname")
+    let mail = document.getElementById("mail")
+    let telephone = document.getElementById("telephone")
+    if(name.validity.rangeUnderflow){
+        document.getElementById("namee").innerHTML = "Имя слишком короткое"
+    }
 }
-}
+    // document.getElementById("namee").innerHTML = "Имя " + name.value
+
+// function change_style2() {
+// let y = document.getElementById("onyx")
+// if (y.style.display=="none")
+// y.style.display="block";
+// else {
+// y.style.display="none"
+// }
+// }
