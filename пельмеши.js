@@ -64,6 +64,20 @@ function valid_pelmen() {
         document.getElementById("namee").innerHTML = "Имя слишком короткое"
     }
 }
+function RandomElement (arr) {
+    var rand = Math.floor(Math.random() * arr.length) ;
+    return arr[rand]
+}
+function rand_tshirt() {
+   var arr = ["другую папку/press_f1.png" , "другую папку/press_f2.png" , "другую папку/press_f3.png" , "другую папку/press_f4.png"]
+    let id_img = ["random1","random2"]
+
+    for (let i = 0; i<id_img.length; i++) {
+        c = document.gerElementById(id_img[i]);
+        img = RandomElement (arr) ;
+        c.src = img;
+    }
+}
     // document.getElementById("namee").innerHTML = "Имя " + name.value
 
 // function change_style2() {

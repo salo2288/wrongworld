@@ -71,17 +71,27 @@
   <p>ФУТБОЛКИ</p>
   <p>0% хлопок</p>
 </div>
-<div class="class">
+<div class="main_slider">
   <div>
-    <img src="другую папку/футболка ну типо.png" width="500px" height="500px" onclick="change_style2()">
-    <p>ПЕЛЬМЕНИ БЕЛЫЕ</p><p>499p</p>
-    <button class="OOOwepelmectoro" onmouseover="prompt('ПЕЛЬМЕНИ РЯДОМ БЕРЕГИТЕСЬ')">добавить *</button>
+    <button class="button_slider_prev" onclick="rand_tshirt()"><img src="другую папку/батон.png"  width="200px" height="100px"></button>
+  </div>
+  <div class="slider">
+      <div class="slider-line">
+        <div>
+          <img src="другую папку/футболка ну типо.png" width="500px" height="500px" onclick="change_style2()" id="random1" >
+          <p>ПЕЛЬМЕНИ БЕЛЫЕ</p><p>499p</p>
+          <button class="OOOwepelmectoro" onmouseover="prompt('ПЕЛЬМЕНИ РЯДОМ БЕРЕГИТЕСЬ')">добавить *</button>
 
+        </div>
+        <div>
+          <img src="другую папку/футболка ну типо СИКВЕЛЬ.png" width="500px" height="500px" id="random2">
+          <p>ПЕЛЬМЕНИ ЧЁРНЫЕ</p><p>499p</p>
+          <button class="OOOwepelmectoro" onmouseover="prompt('ПЕЛЬМЕНИ РЯДОМ БЕРЕГИТЕСЬ')">добавить *</button>
+        </div>
+      </div>
   </div>
   <div>
-    <img src="другую папку/футболка ну типо СИКВЕЛЬ.png" width="500px" height="500px">
-    <p>ПЕЛЬМЕНИ ЧЁРНЫЕ</p><p>499p</p>
-    <button class="OOOwepelmectoro" onmouseover="prompt('ПЕЛЬМЕНИ РЯДОМ БЕРЕГИТЕСЬ')">добавить *</button>
+    <button class="button_slider_next" onclick="rand_tshirt()"><img src="другую папку/батон.png" width="200px" height="100px"></button>
   </div>
 </div>
 <div class="clissno">
@@ -178,25 +188,29 @@
       ИМЯ
     </label>
     <br>
-    <input type="text" placeholder="ИМУ" class="len" id="name" min="2" required>
+    <input type="text" placeholder="ИМУ" class="len" id="name" minlength="2" required>
+    <span class="form__error">имя слишком имя</span>
     <br>
     <label>
       ФАМИЛИЯ
     </label>
     <br>
-    <input type="text" placeholder="фумилия" class="len" id="surname" min="2" required>
+    <input type="text" placeholder="фумилия" class="len" id="surname" minlength="2" required>
+    <span class="form__error">вы фамильный</span>
     <br>
     <label>
       ПОЧТА
     </label>
     <br> 
-    <input type="text" placeholder="УГАГАГАГА" class="len" id="male" required>
+    <input type="email" placeholder="УГАГАГАГА" class="len" id="male" required>
+    <span class="form__error">у вас какая-то не почта</span>
     <br>
     <label>
       ТЕЛЕФОН
     </label>
     <br>
     <input type="tel" placeholder="ПЕЛЬМЕШКИ" class="len" id="telephone" required minlength="12" maxlength="12">
+    <span class="form__error">СЛИШКОМ МНОГО ИЛИ МАЛО ИЛИ КАКАЯ-ТО ДИЧЬ</span>
     <br>
     <font color="green">оплата онлайн</font>
     <br>

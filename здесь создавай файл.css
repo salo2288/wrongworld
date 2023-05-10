@@ -6,7 +6,6 @@ line-height: 40px;
 }
 * {
 font-family: 'Oswald', sans-serif; 
-font-family: 'Rubik Puddles', cursive;
 margin: 0;
 padding: 0;
 color: rgb(0, 0, 0);
@@ -26,12 +25,39 @@ text-align: center;
 line-height: 40px;
 }
 .class {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 40px;
+    gap: 120px;
+    margin-top: 100px;
+    }
+.main_slider {
+background-color: darkgreen;
 display: flex;
-justify-content: center;
+align-items: center;
+}
+.slider {
+width: 55%;
+height: 700px;
+margin: 20px auto;
+overflow: hidden;
+}
+.slider-line {
+display: flex;
 text-align: center;
 line-height: 40px;
-gap: 120px;
-margin-top: 100px;
+gap: 70px;
+width: 55%;
+height: 700px;
+position: relative;
+left: 0;
+}
+.button_slider_prev {
+margin-left: 50%;
+}
+.button_slider_next {
+margin-left: -50%;
 }
 .OOOwepelmectoro {
 background-color: maroon ;
@@ -91,8 +117,7 @@ background-color: wheat;
 
 margin-top: 5px;
 width: 250px;
-border: white;
-box-shadow: 10px 10px 5px crimson;
+box-shadow: 10px 10px 5px rgb(73, 51, 153);
 }
 .br {
 background-color: mediumseagreen;
@@ -202,9 +227,20 @@ margin-top: 50px;
 text-align: center;
 }
 input:valid:not(:placeholder-shown) {
-    border-color: green;
+    border: 5px solid green;
 }
 
 input:invalid:not(:placeholder-shown) {
-    border-color: red;
+    border:5px solid red;
 }
+input:invalid:not(:placeholder-shown) + .form__error {
+    display: block;
+    }    
+    .form__error {
+        color: red;
+        text-align: left;
+        font-size: 30px;
+        display: block;
+        margin-top: 3px;
+        display: none;
+        }
