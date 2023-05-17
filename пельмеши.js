@@ -69,15 +69,24 @@ function RandomElement (arr) {
     return arr[rand]
 }
 function rand_tshirt() {
-   var arr = ["другую папку/press_f1.png" , "другую папку/press_f2.png" , "другую папку/press_f3.png" , "другую папку/press_f4.png"]
+   var arr = ["другую папку/press_f1.png" , "другую папку/press_f2.png" , "другую папку/press_f3.png" , "другую папку/press_f4.png" , "другую папку/press_f5.png" , "другую папку/press_f6.png" , "другую папку/press_f7.png" , "другую папку/press_f8.png" ,]
     let id_img = ["random1","random2"]
 
     for (let i = 0; i<id_img.length; i++) {
-        c = document.gerElementById(id_img[i]);
+        c = document.getElementById(id_img[i]);
         img = RandomElement (arr) ;
         c.src = img;
     }
 }
+const sliderPrev = document.querySelector (".button_slider_prev2")
+const sliderNext = document.querySelector (".button_slider_next2")
+const sliderLine = document.querySelector (".slider-line2")
+
+let ofset = 0
+sliderPrev.addEventListener('click', function(){
+    ofset = ofset+500
+sliderLine.style.left = -ofset + 'px'
+})
     // document.getElementById("namee").innerHTML = "Имя " + name.value
 
 // function change_style2() {
